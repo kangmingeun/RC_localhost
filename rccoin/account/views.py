@@ -14,7 +14,7 @@ from .models import Profile
 
 # Create your views here.
 
-host = 'http://210.107.78.166:3000/'
+host = 'http://127.0.0.1:3000/' #유동적 ip
 
 # 로그인
 def login(request):
@@ -66,7 +66,7 @@ def forget_pwd(request):
             # send_mail(
             #     '[RC: 발신전용] 비밀번호 안내 메일',
             #     '비밀번호가 [ ' + new_pwd + ' ]로 초기화 되었습니다.',
-            #     'doradora46@naver.com',
+            #     'doradora46@naver.com', #나중에 내아이디로 하면됨 
             #     [user[0].email],
             #     fail_silently=False,
             # )

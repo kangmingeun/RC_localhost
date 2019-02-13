@@ -289,7 +289,7 @@ class ChartData(APIView):
         data_list1 = ChartStat.objects.values_list('gender', flat=True).filter(store__location=location)
         default_items = [0, 0]
         for data in data_list1:
-            if data == 1:
+            if data == '1':
                 default_items[0] += 1
             else : default_items[1] += 1
 
@@ -356,7 +356,7 @@ def check_length(string, max_len):
         result = str(string)
     return result
 
-host = "http://210.107.78.166:3000/"
+host = "http://127.0.0.1:3000/"
 
 ## query
 def get_notices():
@@ -376,7 +376,12 @@ def get_notices():
 def get_publish_amount():
     get_publish_url = host + "get_total_publish"
     publish_data = {}
-    publish_amount = 0
+
+    publish_amout_url = host + "get_account"
+    params = {'user_id' : "admin"}
+    response = requests.get(publish_amout_url, params=params)
+    res = response.json()
+    publish_amount = (int(res['value']))
 
     try:
         response = requests.get(get_publish_url)

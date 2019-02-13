@@ -41,7 +41,7 @@
                         <td>{{ user.username }}</td>
                         <td>{{ user.email }}</td>
                         <td>
-                          {% if user.profile.gender == 'm' %}
+                          {% if user.profile.gender == 1 %}
                             남자
                           {% else %}
                             여자
@@ -53,7 +53,7 @@
                         {% elif user.profile.type == 2 %}
                         <td>일반</td>
                         {% endif %}
-                        {% if user.profile.status == 'a' %}
+                        {% if user.profile.status == 1 %}
                         <td>활동</td>
                         {% else %}
                         <td>탈퇴</td>

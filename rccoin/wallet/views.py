@@ -13,7 +13,7 @@ from operate.models import ChartStat
 
 # Create your views here.
 
-host = 'http://210.107.78.166:3000/'
+host = 'http://127.0.0.1:3000/' #통신에 따라 ip변경
 
 # wallet 정보 획득
 @login_required

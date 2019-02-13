@@ -23,7 +23,8 @@ function chk_password() {
     //     return true
     // }
     // alert(msg)
-    // return false
+    // return false 
+    return true
 
     $("body").loadingModal({
         position: "auto",

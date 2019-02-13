@@ -77,7 +77,7 @@ function chk_password() {
     // $("#password1").focus()
     // alert(msg)
     // return false
-    return true
+    return true //위에주석 풀면 이건꺼야됨
 }
 
 function chk_email() {

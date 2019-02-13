@@ -148,7 +148,7 @@ STATICFILES_DIRS = [ os.path.join('static'), ]
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
-# Email host setting
+# Email host setting #비밀번호찾기 내아이디 적으면됨 #네이버 환경설정 pop3/imap imap/smap 설정 아이디 비번#
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
 EMAIL_HOST = 'smtp.naver.com'
